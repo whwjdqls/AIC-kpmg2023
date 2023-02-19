@@ -20,3 +20,5 @@ To validate this model run:
 ```
 python run_squad.py --task korquad --config_file koelectra-base-v3_test.json
 ```
+## Making Custom QA Dataset
+Making custom dataset in the form of KorQuAD 2.1 form target files
