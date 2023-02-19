@@ -12,6 +12,8 @@ Leveraging pretrained models from [KoELECTRA](https://github.com/monologg/KoELEC
 - You can download the KorQuAD 2.1 dataset in [this link](https://korquad.github.io/)
 
 ## Training/Validation
+You can just clone the [KoELECTRA](https://github.com/monologg/KoELECTRA) repo into your own computer. Then, overwrite our files in the `KoELECTR/finetune` directory.
+<br><br>
 To train this model run:
 ```
 python run_squad.py --task korquad --config_file koelectra-base-v3.json
