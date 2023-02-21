@@ -75,18 +75,19 @@ def main(cli_args):
     train_files = list(path for path in sorted(glob.glob(os.path.join(args.data_dir, args.task, 'KorQuAD', 'train')+'/*.json')))
     dev_files = list(path for path in sorted(glob.glob(os.path.join(args.data_dir, args.task, 'KorQuAD', 'dev')+'/*.json')))
 
-    #for train_file in train_files[:4]:
+    #Unzip files if needed
+    #for train_file in train_files:
     #    ZipFile(train_file).extractall(os.path.dirname(train_file))
-    print(train_files)
+    
     #Load json config file
-    for train_file in train_files[0:9]:
+    for train_file in train_files:
         with open(train_file, "r", encoding="utf-8") as reader:
             input_data = json.load(reader)["data"]    
         file_path = os.path.join(args.data_dir, args.task, 'KorQuAD/train/new_') + os.path.basename(train_file)
         print('remove tags from {} to {}'.format(train_file, file_path))    
         _remove_tags(input_data, args, file_path)
         
-    for dev_file in dev_files[0:2]:   
+    for dev_file in dev_files:   
         with open(dev_file, "r", encoding="utf-8") as reader:
             input_data = json.load(reader)["data"]    
         file_path = os.path.join(args.data_dir, args.task, 'KorQuAD/dev/new_') + os.path.basename(dev_file)
