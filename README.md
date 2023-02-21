@@ -11,6 +11,11 @@ Leveraging pretrained models from [KoELECTRA](https://github.com/monologg/KoELEC
 - The transformer can be directly used through [this huggingface link](https://github.com/huggingface/transformers)
 - You can download the KorQuAD 2.1 dataset in [this link](https://korquad.github.io/)
 
+## Data Preprocessing
+To eliminate unnecessary html tags from data files, run:
+```
+python tag_remover.py --task korquad --config_file koelectra-base-v3.json
+```
 ## Training/Validation
 You can just clone the [KoELECTRA](https://github.com/monologg/KoELECTRA) repo into your own computer. Then, overwrite our files in the `KoELECTR/finetune` directory.
 <br><br>
