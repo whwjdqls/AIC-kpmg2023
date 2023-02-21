@@ -3,7 +3,7 @@
 Leveraging pretrained models from [KoELECTRA](https://github.com/monologg/KoELECTRA/tree/master/pretrain) and adapting to train on the KorQuAD 2.1 dataset. Specifically,
 - We added data preprocessing
 - We modified the transformer to fit the KorQuAD 2.1 dataset
-- We implemented the sliding window in long context to imporve accuracy
+- We implemented the sliding window in long context to improve accuracy
 - We created our own Q&A datasets on business report and used them for training
 
 ## Preparation
