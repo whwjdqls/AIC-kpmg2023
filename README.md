@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/97112643/220863279-a85fdee2-ce9a-4b3f-b06e-dfe20dbe952e.png)
 # AIC-kpmg2023
 
 Leveraging pretrained models from [KoELECTRA](https://github.com/monologg/KoELECTRA/tree/master/pretrain) and adapting to train on the KorQuAD 2.1 dataset. Specifically,
