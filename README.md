@@ -6,6 +6,8 @@ Leveraging pretrained models from [KoELECTRA](https://github.com/monologg/KoELEC
 - We implemented the sliding window in long context to improve accuracy
 - We created our own Q&A datasets on business report and used them for training
 
+If you want to see backend and frontend of AIC, see [AIC-BE](https://github.com/devch1013/KPMG_AIC_backend) / [AIC-FE](https://github.com/younghanstark/2023_kpmg_aic_frontend)
+
 ## Preparation
 - The koelectra finetuning is performed by referring to [this link](https://github.com/monologg/KoELECTRA)
 - The transformer can be directly used through [this huggingface link](https://github.com/huggingface/transformers)
